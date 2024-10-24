@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="pages">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="all">all</option>
+    </select>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+    <input type="text" id="searchInput" placeholder="Search items...">
+    <table id="mytable">
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th id="name">Name <span class="sort-arrow"></span></th>
+                <th id="full_name">Full Name <span class="sort-arrow"></span></th>
+                <th id="combat">Combat <span class="sort-arrow"></span></th>
+                <th id="durability">Durability <span class="sort-arrow"></span></th>
+                <th id="intelligence">Intelligence</th>
+                <th id="power">Power</th>
+                <th id="speed">Speed</th>
+                <th id="strength">Strength <span class="sort-arrow"></span></th>
+                <th id="race">Race <span class="sort-arrow"></span></th>
+                <th id="gender">Gender <span class="sort-arrow"></span></th>
+                <th id="height">Height</th>
+                <th id="weight">Weight</th>
+                <th id="birth">Place of Birth</th>
+                <th id="alignment">Alignment <span class="sort-arrow"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+    <script type="module">
+        import { getData } from "./sortable.js"
+        getData()   
+    </script>
+
+</body>
+
+</html>
